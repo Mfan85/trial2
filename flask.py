@@ -7,7 +7,7 @@ Created on Sun Jan  1 20:22:08 2023
 
 from flask import Flask, request
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def index():
